@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:gravity="center_horizontal"
+    android:layout_height="match_parent">
+    <TextView android:id="@+id/ortitle"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:text="ABBOYZ"
+        android:textSize="40sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/orsub"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/ortitle"
+        android:textSize="20sp"
+        android:text="delivery on the go.."
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <ImageView
+        android:layout_below="@+id/ortitle"
+        android:layout_toRightOf="@+id/orsub"
+        android:src="@drawable/ic_directions_run_black_24dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <ImageView
+        android:id="@+id/deliv"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/orsub"
+        android:src="@mipmap/de"
+        android:layout_width="match_parent"
+        android:layout_height="180dp" />
+    <TextView
+        android:id="@+id/orderbringee"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/deliv"
+        android:text="You need it, We bring it!"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <GridView
+        android:layout_margin="20dp"
+        android:layout_below="@+id/orderbringee"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:numColumns="3"
+        android:id="@+id/orderhomee">
+
+    </GridView>
+
+
+
+</RelativeLayout>

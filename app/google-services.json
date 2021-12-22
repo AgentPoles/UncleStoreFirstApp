@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "652916883760",
+    "firebase_url": "https://framework-acddc.firebaseio.com",
+    "project_id": "framework-acddc",
+    "storage_bucket": "framework-acddc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:652916883760:android:f7a4a5c371236a41",
+        "android_client_info": {
+          "package_name": "com.mycompany.myapp.bframework"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "652916883760-bmms4ps88ks9lh2imjd5bqtckp2hiosn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC3oKipF9jeF0jR5y0qSShtwGaVKLxNGxM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

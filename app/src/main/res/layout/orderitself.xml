@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_margin="20dp"
+    android:id="@+id/orderitselffe"
+    android:clickable="true"
+    android:background="#0a2149"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+<ImageView
+    android:id="@+id/smallordere"
+    android:src="@mipmap/theframee"
+    android:layout_centerHorizontal="true"
+    android:layout_width="60dp"
+    android:layout_height="60dp" />
+    <TextView
+        android:id="@+id/smallname"
+        android:text="Pure Water"
+        android:layout_marginTop="3dp"
+        android:textAlignment="center"
+        android:background="#eee6a4"
+        style="@style/AlertDialog.AppCompat"
+        android:layout_below="@+id/smallordere"
+        android:layout_centerHorizontal="true"
+        android:textSize="15sp"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/smallprice"
+        android:layout_marginTop="3dp"
+        android:layout_below="@+id/smallname"
+        android:text="#1267888"
+        android:textColor="@android:color/holo_red_light"
+        android:textAlignment="center"
+        android:textSize="13sp"
+        android:layout_width="80dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="25dp" />
+    <TextView
+        android:id="@+id/smallbuy"
+        android:text="Touch to buy"
+        android:layout_marginTop="5dp"
+        android:textColor="#eee6a4"
+        android:layout_below="@+id/smallprice"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:textSize="10sp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" />
+    <ImageView
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/smallbuy"
+        android:src="@drawable/ic_shopping_cart_black_24dp"
+        android:layout_width="40dp"
+        android:layout_height="40dp" />
+</RelativeLayout>

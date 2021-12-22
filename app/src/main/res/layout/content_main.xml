@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:id="@+id/mwhole"
+    android:layout_centerHorizontal="true"
+    android:background="#f9ef"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.mycompany.myapp.bframework.MainActivity"
+    tools:showIn="@layout/app_bar_main">
+
+    <ImageView
+        android:id="@+id/home_image"
+        android:layout_margin="10dp"
+        android:src="@mipmap/clienter"
+        android:layout_width="500dp"
+        android:layout_height="150dp" />
+    <TextView
+        android:layout_below="@+id/home_image"
+        android:id="@+id/home_title"
+        android:textSize="35sp"
+        android:layout_marginLeft="45dp"
+        android:gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="The BFramework" />
+    <LinearLayout
+        android:layout_below="@+id/home_title"
+        android:id="@+id/lin"
+        android:gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_marginLeft="80dp"
+            android:textStyle="italic"
+            android:layout_gravity="center_horizontal"
+            android:text="Clients meet Entrepreneurs"
+            android:layout_width="wrap_content"
+            android:paddingTop="5dp"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:src="@drawable/ic_wc_black_24dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linb"
+            android:layout_marginTop="40dp"
+            android:layout_below="@+id/lin"
+            android:gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/signup"
+                android:text="Register"
+                android:layout_marginLeft="18dp"
+                android:textStyle="bold"
+                android:textColor="@android:color/holo_blue_dark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/signind"
+                android:text="Log in"
+                android:layout_marginLeft="25dp"
+                android:textStyle="bold"
+                android:textColor="@android:color/holo_orange_dark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/myaccount"
+                android:text="MyAccount"
+                android:layout_marginLeft="25dp"
+                android:textStyle="bold"
+                android:textColor="@android:color/holo_green_dark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+
+<LinearLayout
+    android:id="@+id/linc"
+    android:layout_below="@+id/linb"
+    android:layout_width="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/load"
+        android:text="."
+        android:textColor="#3F51B5"
+        android:textSize="50sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/loadb"
+        android:layout_marginLeft="3dp"
+        android:layout_toRightOf="@+id/load"
+        android:text="."
+        android:textColor="@android:color/holo_orange_dark"
+        android:textSize="50sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/loadc"
+        android:layout_marginLeft="3dp"
+        android:layout_toRightOf="@+id/loadb"
+        android:text="."
+        android:textColor="@android:color/holo_green_light"
+        android:textSize="50sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</RelativeLayout>

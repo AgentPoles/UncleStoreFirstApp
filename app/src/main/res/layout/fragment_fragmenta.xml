@@ -1,0 +1,34 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:background="#dbcea5"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.mycompany.myapp.bframework.Introc$PlaceholderFragment">
+
+    <TextView
+        android:textSize="19sp"
+
+        android:textColor="#D36F44"
+        android:text="publicise your business, skill, idea or anything that you think can earn you money and that you want the world to know about.."
+        android:id="@+id/section_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+<ImageView
+    android:src="@mipmap/plan"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" />
+    <TextView
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:textSize="30sp"
+        android:textColor="#0a2149"
+        android:layout_marginBottom="20dp"
+        android:text="FrameSpice!"
+        android:layout_marginRight="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</RelativeLayout>

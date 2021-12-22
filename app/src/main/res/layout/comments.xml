@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#192128"
+    android:layout_height="match_parent">
+
+   <LinearLayout android:orientation="vertical" android:layout_width="match_parent"
+
+    android:layout_height="match_parent">
+    <ImageView
+        android:src="@mipmap/letsdobusiness"
+        android:layout_width="match_parent"
+        android:layout_height="150dp" />
+    <TextView
+        android:layout_margin="20dp"
+        android:textColor="@android:color/darker_gray"
+        android:text="thanks for choosing our framework for your transactions, we appreciate! "
+        android:layout_width="wrap_content"
+        android:textAlignment="center"
+        android:layout_height="wrap_content" />
+<EditText
+    android:id="@+id/mycomment"
+    android:layout_margin="20dp"
+    android:backgroundTint="#e3e4e2"
+    android:background="@android:drawable/toast_frame"
+    android:hint="please make your comment and ask your questions"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" />
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/commentdone"
+        app:backgroundTint="@android:color/holo_orange_dark"
+        android:src="@drawable/ic_near_me_black_24dp"
+        android:layout_gravity="end"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp" />
+</LinearLayout>
+</android.support.v4.widget.NestedScrollView>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+android:orientation="vertical"
+android:layout_width="200dp"
+android:layout_margin="5dp"
+android:padding="8dp"
+android:clickable="true"
+android:background="#ffffff"
+android:layout_height="200dp">
+<TextView
+    android:id="@+id/whatwedoa"
+    android:layout_alignParentRight="true"
+    android:textColor="#000000"
+    android:text="Did you know you can get your egg, indomie and lot more delivered at your door steps?"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" />
+<TextView
+    android:id="@+id/tracka"
+    android:layout_above="@+id/logia"
+    android:textColor="#000000"
+    android:text="order from"
+    android:layout_marginBottom="3dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" />
+<LinearLayout
+    android:id="@+id/logia"
+    android:orientation="horizontal"
+    android:layout_alignParentBottom="true"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/spicoa"
+        android:layout_marginTop="0dp"
+        android:layout_marginLeft="10dp"
+        android:src="@mipmap/de"
+        android:layout_width="30dp"
+        android:layout_height="30dp" />
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textSize="25sp"
+            android:textColor="#000000"
+            android:layout_marginTop="0dp"
+            android:layout_centerHorizontal="true"
+            android:text="ABBOYZ"
+            android:layout_marginRight="50dp"
+            android:id="@+id/spicenamea"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp" />
+        <TextView
+            android:text="08138537312"
+            android:textSize="15sp"
+            android:layout_centerHorizontal="true"
+            android:textColor="#000000"
+            android:layout_marginRight="5dp"
+            android:id="@+id/spicecontacta"
+            android:layout_below="@+id/spicenamea"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp" />
+
+    </RelativeLayout>
+</LinearLayout>
+
+
+</RelativeLayout>

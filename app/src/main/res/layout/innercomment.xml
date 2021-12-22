@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:background="#a18676"
+        android:id="@+id/upplayout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_gravity="center_vertical"
+        android:id="@+id/thefrb"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:src="@drawable/office"
+        android:layout_width="50dp"
+
+        android:layout_height="50dp" />
+    <TextView
+        android:id="@+id/thenameb"
+        android:textColor="#653a39"
+        android:textSize="30sp"
+        android:inputType="textEmailAddress"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="15dp"
+        android:layout_toRightOf="@+id/thefrb"
+        android:text="TTThshshhshs"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/innerreci"
+       android:layout_above="@+id/licd"
+        android:padding="3dp"
+        android:background="#fceee3"
+        android:layout_below="@+id/upplayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+    </android.support.v7.widget.RecyclerView>
+            <RelativeLayout
+                android:id="@+id/licd"
+                android:background="#faeee3"
+                android:layout_alignParentBottom="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/getcomment"
+                    android:layout_marginLeft="10dp"
+                    android:background="@android:drawable/toast_frame"
+                    android:backgroundTint="@android:color/darker_gray"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    android:hint="Enter comment or question"
+                    />
+                <android.support.design.widget.FloatingActionButton
+                    android:layout_width="60dp"
+                    android:id="@+id/sendcomment"
+                    app:backgroundTint="#66ff8800"
+                    android:src="@drawable/ic_near_me_black_24dp"
+                    android:layout_alignBottom="@+id/getcomment"
+                    android:layout_toRightOf="@+id/getcomment"
+                    android:layout_marginLeft="10dp"
+                    android:layout_height="60dp" />
+            </RelativeLayout>
+
+
+
+
+</RelativeLayout>

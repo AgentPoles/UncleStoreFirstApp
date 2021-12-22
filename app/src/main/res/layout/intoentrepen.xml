@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="#0a2149"
+    android:layout_margin="10dp"
+    android:padding="10dp"
+    android:layout_height="match_parent">
+<ImageView
+    android:src="@drawable/ic_shopping_basket_black_24dp"
+    android:layout_gravity="center_horizontal"
+    android:layout_width="60dp"
+    android:layout_height="60dp" />
+    <TextView
+        android:id="@+id/eusername"
+        android:layout_marginLeft="20sp"
+        android:layout_marginTop="15dp"
+        android:text="Yusuf Omoregie"
+        android:textSize="20sp"
+        android:textColor="#eee64a"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+      android:id="@+id/eusernumber"
+        android:layout_marginTop="15dp"
+        android:text="0807654321"
+        android:textSize="20sp"
+        android:textColor="#eee64a"
+        android:layout_marginLeft="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+      android:id="@+id/euseremail"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:text="gher@gmail.com"
+        android:textSize="20sp"
+        android:textColor="#eee64a"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/euseraddress"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:text="98, osasogie store road ugbowo benon city"
+        android:textSize="17sp"
+        android:textColor="@android:color/holo_orange_dark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/egoodsname"
+        android:layout_marginTop="15dp"
+        android:text="Small indomie"
+        android:textSize="20sp"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@android:color/holo_red_light"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:background="@android:drawable/toast_frame"
+        android:backgroundTint="#dbcea5"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_marginTop="10dp"
+            android:text="Amount: "
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/egoodscount"
+        android:layout_marginTop="10dp"
+        android:text="2"
+        android:layout_marginLeft="5dp"
+        android:textSize="25sp"
+        android:textColor="@android:color/holo_green_dark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:backgroundTint="#dbcea5"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/egroodsprice"
+            android:layout_marginTop="10dp"
+            android:text="#"
+            android:textColor="@android:color/holo_red_light"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/egoodsprice"
+            android:layout_marginTop="10dp"
+            android:text="60"
+            android:textColor="@android:color/holo_red_light"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+        android:layout_marginTop="10dp"
+        android:text="per one"
+        android:layout_marginLeft="5dp"
+        android:textSize="20sp"
+        android:textColor="#eee6a4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:backgroundTint="#dbcea5"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_marginTop="10dp"
+            android:text="Total Cost  #"
+           android:textColor="#eee6a4"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/totalcost"
+            android:layout_marginTop="10dp"
+            android:text="566"
+            android:layout_marginLeft="0dp"
+            android:textSize="20sp"
+            android:textColor="@android:color/holo_red_light"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+</LinearLayout>

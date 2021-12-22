@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<android.support.v4.widget.NestedScrollView
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+
+android:layout_width="match_parent"
+android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/upa"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:textColor="#0a2149"
+        android:background="#fbfad2"
+        android:layout_centerHorizontal="true"
+        android:text="Advertize what you do on Framespice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <RelativeLayout
+        android:layout_below="@+id/upa"
+        android:id="@+id/firstlio"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+        <fragment
+            android:id="@+id/spicingfra"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="200dp"
+            android:layout_alignParentRight="true"
+            android:layout_height="match_parent"
+            android:name="com.mycompany.myapp.bframework.Jspicofra"
+            tools:layout="@layout/spicofra" />
+        <ImageView
+            android:layout_toLeftOf="@id/spicingfra"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+        <RelativeLayout
+        android:layout_below="@+id/firstlio"
+        android:layout_width="match_parent"
+        android:background="@color/black_overlay"
+        android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <RelativeLayout
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+               <ImageView
+                   android:layout_centerHorizontal="true"
+                   android:id="@+id/spicpics"
+                   android:layout_gravity="center"
+                android:src="@drawable/picture"
+                android:layout_width="150dp"
+                android:layout_height="150dp" />
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/uploade"
+                        android:src="@drawable/uploade"
+                        android:layout_toRightOf="@+id/spicpics"
+                        android:layout_width="50dp"
+                        android:layout_alignBottom="@+id/spicpics"
+                        android:layout_height="50dp" />
+                    <TextView
+                        android:layout_toRightOf="@+id/uploade"
+                     android:layout_alignBottom="@+id/uploade"
+                        android:textSize="20sp"
+                        android:textColor="@android:color/holo_blue_bright"
+                        android:text="load image"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+                <EditText
+                    android:hint="Comment"
+                    android:layout_margin="15dp"
+                    android:textSize="15sp"
+                    android:background="@android:drawable/editbox_background"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <EditText
+                    android:hint="business Name"
+                    android:layout_margin="15dp"
+                    android:textSize="15sp"
+                    android:background="@android:drawable/editbox_background"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <EditText
+                    android:hint="business contact"
+                    android:layout_margin="15dp"
+                    android:textSize="15sp"
+                    android:background="@android:drawable/editbox_background"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <EditText
+                    android:hint="relation"
+                    android:layout_margin="15dp"
+                    android:textSize="15sp"
+                    android:background="@android:drawable/editbox_background"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+       </RelativeLayout>
+
+    </RelativeLayout>
+    </android.support.v4.widget.NestedScrollView>
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="60dp"
+        app:backgroundTint="#ffffff"
+        android:src="@drawable/ic_offline_pin_black_24dp"
+   android:id="@+id/donne"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_height="60dp" />
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/proceed"
+        android:layout_width="50dp"
+        app:backgroundTint="#ffffff"
+        android:src="@drawable/nextoi"
+        android:visibility="gone"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="80dp"
+        android:layout_marginRight="25dp"
+        android:layout_height="50dp" />
+
+
+</RelativeLayout>

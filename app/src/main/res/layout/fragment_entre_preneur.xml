@@ -1,0 +1,53 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#d6d6d6"
+    tools:context="com.mycompany.myapp.bframework.BusinessFragment">
+    <ImageView
+        android:id="@+id/busipicei"
+        android:background="#30555f"
+        android:layout_alignParentTop="true"
+        android:src="@mipmap/roundtable"
+        android:layout_width="match_parent"
+        android:layout_height="120dp" />
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/busipicei"
+        android:layout_height="wrap_content">
+        <!-- TODO: Update blank fragment layout -->
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recre"
+            android:layoutMode="clipBounds"
+            android:layoutDirection="locale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </android.support.v7.widget.RecyclerView>
+    </android.support.v4.widget.NestedScrollView>
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/addoi"
+        android:visibility="gone"
+        android:src="@android:drawable/ic_input_add"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        app:rippleColor="@android:color/holo_orange_dark"
+        android:layout_marginBottom="20dp"
+        android:layout_width="50dp"
+        app:backgroundTint="#3F51B5"
+        android:layout_height="50dp" />
+    <TextView
+        android:id="@+id/inviteed"
+        android:text="having issues?..please contact the FrameWork 08138537312"
+        android:layout_alignParentBottom="true"
+        android:layout_width="wrap_content"
+        android:textColor="#653a39"
+        android:textSize="15sp"
+        android:background="@android:drawable/editbox_background"
+        android:backgroundTint="#3fd6d6d6"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:ellipsize="marquee"
+        android:singleLine="true"
+        android:layout_height="28dp" />
+</RelativeLayout>

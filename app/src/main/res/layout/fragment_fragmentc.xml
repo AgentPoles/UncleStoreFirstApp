@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="#dddddd"
+    android:layout_height="match_parent">
+    <TextView
+     android:layout_alignParentBottom="true"
+        android:textColor="#032e48"
+        android:layout_marginLeft="7dp"
+        android:layout_marginRight="7dp"
+        android:text="also, order for goods and services that are available on the framework..."
+        android:layout_width="wrap_content"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        android:layout_marginBottom="50dp"
+
+        android:layout_height="wrap_content" />
+    <ImageView
+        android:layout_alignParentTop="true"
+        android:src="@mipmap/orderoni"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:textSize="30sp"
+        android:visibility="gone"
+        android:text="Business!"
+        android:textColor="@android:color/holo_green_dark"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_alignParentRight="true"
+        android:id="@+id/nexte"
+        android:layout_centerVertical="true"
+        android:src="@drawable/ic_chevron_right_black_24dp"
+        app:backgroundTint="#660a2149"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

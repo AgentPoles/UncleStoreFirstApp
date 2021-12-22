@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/recent"
+            android:icon="@android:drawable/ic_menu_recent_history"
+            android:title="Recents/History" />
+        <item
+            android:id="@+id/businees"
+            android:icon="@drawable/ic_shopping_basket_black_24dp"
+            android:title="Business" />
+        <item
+            android:id="@+id/informatione"
+            android:icon="@drawable/ic_question_answer_black_24dp"
+            android:title="Information" />
+        <item
+            android:id="@+id/framespice"
+            android:icon="@drawable/ic_poll_black_24dp"
+            android:title="FrameSpice" >
+        </item>
+
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/commente"
+                android:icon="@drawable/ic_message_black_24dp"
+                android:title="Comment" />
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Share" />
+            <item
+                android:id="@+id/explore"
+                android:icon="@drawable/ic_rowing_black_24dp"
+                android:title="Explore" />
+            <item
+                android:id="@+id/about"
+                android:icon="@drawable/ic_info_black_24dp"
+                android:title="About" />
+
+        </menu>
+    </item>
+
+</menu>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:background="#fbfad2"
+    android:id="@+id/leecomet"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/annim"
+        android:layout_gravity="center"
+
+        android:src="@mipmap/chat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:visibility="gone"
+        android:layout_below="@+id/annim"
+        android:id="@+id/wename"
+        android:layout_marginTop="10dp"
+        android:textSize="35sp"
+        android:textColor="@android:color/holo_orange_dark"
+        android:gravity="center_horizontal"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/nss"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_below="@+id/annim"
+        android:textAlignment="center"
+        android:layout_margin="20dp"
+        android:gravity="center_vertical"
+
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/colorPrimary"
+        android:text="Hi i am Ann the software program that runs the entire POLES system, you will find all you need to know about this app when you EXPLORE and you can make your COMMENTS and ask questions which I will answer within a range of specified time. \n Dear Friend i want to officially welcome you to..."
+        android:id="@+id/weee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+</RelativeLayout>

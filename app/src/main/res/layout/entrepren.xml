@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="#fbfad2"
+    android:padding="10dp"
+    android:id="@+id/wholeentre"
+    android:layout_margin="5dp"
+    android:layout_height="80dp">
+    <ImageView
+        android:id="@+id/carte"
+        android:src="@drawable/request"
+        android:layout_width="50dp"
+        android:layout_height="50dp" />
+    <TextView
+        android:id="@+id/demandname"
+        android:layout_toRightOf="@+id/carte"
+        android:text=" yusuf rugrururrur "
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:inputType="textEmailAddress"
+        android:textColor="#0a2149"
+        android:layout_marginLeft="10dp"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_marginLeft="43dp"
+        android:layout_marginTop="0dp"
+        android:background="@drawable/red"
+        android:text="unread!"
+        android:textColor="@android:color/white"
+        android:textSize="10sp"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_below="@+id/demandname"
+        android:textSize="13sp"
+        android:textColor="#0a2149"
+        android:textStyle="italic"
+        android:layout_marginLeft="18dp"
+        android:layout_toRightOf="@+id/carte"
+        android:text="just made a request"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

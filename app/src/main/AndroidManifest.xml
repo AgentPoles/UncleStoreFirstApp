@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.mycompany.myapp.bframework">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <provider
+            android:name=".AnnContentProvider"
+            android:authorities="com.mycompany.provider.myapp" />
+
+        <activity
+            android:name=".SplashActivity"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Signupe"
+            android:label="@string/title_activity_signupe"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Myaccount"
+            android:label="@string/title_activity_myaccount"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".OrderHomee" />
+        <!--
+ ATTENTION: This was auto-generated to add Google Play services to your project for
+     App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information.
+        -->
+
+        <activity
+            android:name=".Polee"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_polee"
+            android:theme="@style/FullscreenTheme" />
+        <activity
+            android:name=".Introc"
+            android:label="@string/title_activity_introc"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Authentic" />
+        <activity android:name=".InnerCommet"></activity>
+    </application>
+
+</manifest>

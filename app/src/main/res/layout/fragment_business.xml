@@ -1,0 +1,32 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#ffffff"
+    tools:context="com.mycompany.myapp.bframework.BusinessFragment">
+    <android.support.design.widget.TabLayout
+        android:id="@+id/trabss"
+        android:background="@color/black_overlay"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:elevation="5dp"
+        app:tabPadding="20dp"
+        app:tabGravity="center"
+
+        app:tabMaxWidth="0dp"
+   app:tabMode="fixed"
+        app:layout_scrollFlags = "scroll|enterAlways"
+        tools:ignore="UnusedAttribute">
+    </android.support.design.widget.TabLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <fragment
+            android:id="@+id/ineer_busi_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:name="com.mycompany.myapp.bframework.Buye"
+            tools:layout="@layout/sorder" />
+    </FrameLayout>
+   </RelativeLayout>

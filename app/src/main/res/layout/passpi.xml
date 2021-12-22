@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="#036576"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_marginTop="15dp"
+            android:textSize="15sp"
+            android:textAlignment="center"
+            android:textColor="#eee6a4"
+            android:text=" Account creation is on going, ensure all entered details are real, we need them for efficiency. \n please enter atleast "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/passyb"
+            android:layout_marginTop="20dp"
+            android:textAlignment="center"
+            android:layout_gravity="center_horizontal"
+            android:hint="a 6 digit password"
+            android:textColor="#0a2149"
+            android:layout_width="250dp"
+            android:inputType="numberPassword"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/confpassyb"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center_horizontal"
+            android:hint="confirm password"
+            android:layout_width="250dp"
+            android:textColor="#0a2149"
+            android:textAlignment="center"
+            android:inputType="numberPassword"
+            android:layout_height="wrap_content" />
+            <ImageView
+                android:id="@+id/visibility"
+        android:layout_marginLeft="5dp"
+                android:src="@drawable/ic_visibility_black_24dp"
+                android:layout_width="30dp"
+                android:clickable="true"
+                android:layout_gravity="center_vertical"
+                android:layout_height="30dp" />
+        </LinearLayout>
+        <ImageView
+            android:id="@+id/passyclickb"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/ic_offline_pin_black_24dp"
+            android:layout_width="60dp"
+            android:layout_height="60dp" />
+    </LinearLayout>
+</LinearLayout>

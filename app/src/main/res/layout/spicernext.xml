@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/black_overlay"
+    android:layout_height="match_parent">
+    <fragment
+        android:id="@+id/spicingfra"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="200dp"
+        android:name="com.mycompany.myapp.bframework.Jspicofra"
+        tools:layout="@layout/spicofra" />
+    <TextView
+        android:id="@+id/texxte"
+        android:layout_below="@+id/spicingfra"
+        android:layout_marginTop="0dp"
+        android:textSize="30sp"
+        android:textColor="#0a2149"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:text="Background Color"
+        android:background="@android:drawable/toast_frame"
+        android:layout_width="wrap_content"
+        android:backgroundTint="#ffffff"
+        android:layout_height="wrap_content" />
+    <GridView
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/texxte"
+        android:background="#ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/thegrid"
+        android:numColumns="6"
+        />
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="60dp"
+        app:backgroundTint="#fbfad2"
+        android:src="@drawable/nextoi"
+        android:id="@+id/donnep"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_height="60dp" />
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/prev"
+        android:layout_width="50dp"
+        app:backgroundTint="#fbfad2"
+        android:src="@drawable/previous"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="80dp"
+        android:layout_marginRight="25dp"
+        android:layout_height="50dp" />
+</RelativeLayout>

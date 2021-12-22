@@ -1,0 +1,305 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context="com.mycompany.myapp.bframework.Polee">
+
+    <!-- The primary full-screen view. This can be replaced with whatever view
+         is needed to present your content, e.g. VideoView, SurfaceView,
+         TextureView, etc. -->
+    <RelativeLayout
+
+        android:id="@+id/laya"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+
+    <RelativeLayout
+        android:background="#dddddd"
+        android:id="@+id/fullscreen_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <ImageView
+            android:id="@+id/sour"
+            android:src="@drawable/wmmm"
+            android:layout_width="60dp"
+            android:layout_height="60dp" />
+        <TextView
+            android:layout_toRightOf="@id/sour"
+            android:id="@+id/hi"
+            android:layout_margin="20dp"
+            android:textSize="20sp"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#0a2149"
+            android:text="Hi. please take your place in the framework"/>
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/ally"
+            android:layout_marginTop="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:layout_centerHorizontal="true"
+            android:visibility="gone"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/namel"
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:orientation="horizontal"
+                android:layout_marginTop="30dp"
+                android:layout_gravity="center_horizontal">
+                <ImageView
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/ic_perm_identity_black_24dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <EditText
+                        android:id="@+id/ednameb"
+                        android:textColor="#0a2149"
+                        android:inputType="textEmailAddress"
+                        android:layout_gravity="center_vertical"
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:hint="Enter Your Name"/>
+                </android.support.design.widget.TextInputLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/emaill"
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center_horizontal">
+                <ImageView
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/ic_mail_outline_black_24dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <EditText
+                        android:layout_gravity="center_vertical"
+                        android:id="@+id/edemailb"
+                        android:inputType="textEmailAddress"
+                        android:layout_width="250dp"
+                        android:textColor="#0a2149"
+                        android:layout_height="wrap_content"
+                        android:hint="Enter Your Email"/>
+                </android.support.design.widget.TextInputLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/numberl"
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:orientation="horizontal"
+                android:layout_marginTop="0dp"
+                android:layout_gravity="center_horizontal">
+                <ImageView
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/ic_call_black_24dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <EditText
+                        android:layout_gravity="center_vertical"
+                        android:id="@+id/ednumberb"
+                        android:layout_width="250dp"
+                        android:inputType="number"
+                        android:textColor="#0a2149"
+                        android:layout_height="wrap_content"
+                        android:hint="Mobile Phone Number"/>
+                </android.support.design.widget.TextInputLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/addressl"
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:orientation="horizontal"
+                android:layout_marginTop="0dp"
+                android:layout_gravity="center_horizontal">
+                <ImageView
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/ic_person_pin_circle_black_24dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <EditText
+                        android:layout_gravity="center_vertical"
+                        android:id="@+id/edaddressb"
+                        android:layout_width="250dp"
+                        android:textColor="#0a2149"
+                        android:inputType="textEmailAddress"
+                        android:layout_height="wrap_content"
+                        android:hint="Current Address"/>
+                </android.support.design.widget.TextInputLayout>
+            </LinearLayout>
+
+
+            <ImageView
+                android:id="@+id/finisignb"
+                android:clickable="true"
+                android:visibility="gone"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/ic_offline_pin_black_24dp"
+                android:layout_marginTop="0dp"
+                android:layout_width="45dp"
+                android:layout_marginLeft="75dp"
+                android:layout_height="45dp" />
+            <LinearLayout
+
+                android:id="@+id/brote"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:orientation="horizontal">
+                <TextView
+
+                    android:layout_marginTop="0dp"
+                    android:id="@+id/loed"
+                    android:text="."
+                    android:textColor="#3F51B5"
+                    android:textSize="50sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+
+                <TextView
+                    android:layout_marginTop="0dp"
+                    android:id="@+id/loedb"
+                    android:layout_marginLeft="3dp"
+                    android:text="."
+                    android:textColor="@android:color/holo_orange_dark"
+                    android:textSize="50sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_marginTop="0dp"
+                    android:id="@+id/loedc"
+                    android:layout_marginLeft="3dp"
+                    android:text="."
+                    android:textColor="@android:color/holo_green_light"
+                    android:textSize="50sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+        </android.support.v4.widget.NestedScrollView>
+        </RelativeLayout>
+    </RelativeLayout>
+    <!-- This FrameLayout insets its children based on system windows using
+         android:fitsSystemWindows. -->
+    <FrameLayout
+        android:id="@+id/frat"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:keepScreenOn="true"
+        android:background="#036576"
+        android:fitsSystemWindows="true">
+     <de.hdodenhof.circleimageview.CircleImageView
+         android:src="@mipmap/polesk"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content" />
+        <LinearLayout
+            android:id="@+id/fullscreen_content_contrls"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            >
+            <LinearLayout
+                android:layout_marginLeft="10dp"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content">
+          <TextView
+              android:text="P"
+              android:textColor="#96ffffff"
+              android:textSize="50sp"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content" />
+                <TextView
+                    android:text="0"
+                    android:textColor="#96ff4444"
+                    android:textSize="50sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:text="L"
+                    android:textColor="#9699cc00"
+                    android:textSize="50sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:text="E"
+                    android:textSize="50sp"
+                    android:textColor="#96ff8800"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:text="S"
+                    android:textSize="50sp"
+                    android:textColor="@color/black_overlay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        <TextView
+            android:layout_gravity="center_horizontal"
+            android:textColor="@android:color/darker_gray"
+            android:textStyle="italic"
+            android:layout_marginLeft="10dp"
+            android:text="mary runs the framework..."
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        </LinearLayout>
+    </FrameLayout>
+    <LinearLayout
+        android:id="@+id/authe"
+        android:visibility="gone"
+        android:orientation="vertical"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/prou"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    <TextView
+
+        android:layout_margin="5dp"
+        android:textSize="22sp"
+        android:textColor="#0a2149"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:textAlignment="center"
+        android:text="Authenticating and Creating account...\n  this would take a while, but it shouldn't take that long.\n if it does, please check your NETWORK connnection"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    </LinearLayout>
+    </FrameLayout>
+
